@@ -1,84 +1,207 @@
-body{
-    font-family: 'Oxygen', sans-serif;
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
 }
 
-#header-nav{
-   background-color: grey;
-    border: 0;
-    margin: 0;
-    height: 100px;
-}
-
-.food {
-    background-color: gray;
-    /*text-align: center;*/
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 100px;
-}
-
-p {
-    font-size: 20px;
-    /*margin-bottom: 100px;*/
-    padding-bottom: 25px;
-}
-
-.navbar-header a:hover, .navbar-header a:focus {
-    text-decoration: none;
-    color: black;
-}
-
-h1{
-    color: black;
+/** HEADER **/
+#header-nav {
+  background-color: grey;
+  padding: 0px;
+    
+  
 }
 
 h2 {
+    color: #B65728
+}
+
+.ourmenu {
     margin-top: 50px;
+    font-size; 10px;
 }
 
-    @media only screen and (max-width: 768px) {
+.navbar-header{
+    padding-bottom: 0px;
+    width: 600px;
+}
+
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+li {
+    padding-bottom: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+
+.category {
+    color: #FCDCCD;
+}
+
+.food {
+    background-color: grey;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+  margin-left: 30px;  
+}
+
+.navbar.container {
+    padding: 0;
+    margin: 0;
+}
+
+#poulet {
+    text-align: center;
+    color: black;
+    
+}
+
+#boeuf {
+  text-align: center;
+    color: black;  
+}
+
+#sushi {
+  text-align: center;
+    color: black;  
+}
+
+h1 { 
+  color: black;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+    font-family: 'Oxygen', sans-serif;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid grey;
+    
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: 30px;
+  
+}
+
+@media (min-width: 768px) {
+    
+     
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand 
+    margin-left: -15px;
+  }
+   
+    .navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  background-color: black;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+    
+    .navbar-toggle:focus {
+  outline: 0;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+    
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+    
+  }
+}
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+    
+
+
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
       
-        button {
-            position: relative;
-            display: block;
-            float: right;
-            width: 25px;
-            height: 50px;
-            cursor: pointer; 
-            background-color: grey;
-            border: none;
-            margin: auto;
-            }
-            
-            button:after{
-                content: '';
-                position: absolute;
-                display: block;
-                width: 16px;
-                box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
-                margin: auto;
-        }
-    
-        .menu {
-            position: absolute;
-            right:0;
-            top: 0;
-        }
-        
-        ul {
-            font-size: 16px;
-            text-align: center;
-            border-bottom: black solid 1px;
-            height: 200px;
-            width: $options-width;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background-color: green;
-        }
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+      
+  }
 }
-        
-
-    }   
-    
 
